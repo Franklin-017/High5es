@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #f26a3a;
+    --primary-text-color: #160929;
+    --secondary-text-color: #383838;
+    --feel-section-bg: rgb(22, 9, 41);
+    --our-team-frame-color: rgb(228, 232, 234);
+    --footer-text-color: #8a8a8a;
+}
+
+@font-face {
+    font-family: Futura-regular;
+    src: url(./fonts/FuturaLT.woff) format(woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Futura-thin;
+    src: url(./fonts/FuturaLT-Light.woff) format(woff);
+    font-size: 300;
+}
+
+@font-face {
+    font-family: Futura-bold;
+    src: url(./fonts/FuturaLT-Bold.woff) format(woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: Futura-regular;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Futura;
+    font-weight: 700;
+}
+
+.logo-wrapper {
+    text-transform: uppercase;
+    font-family: Futura;
+    font-weight: 700;
+    font-size: 19.2pt;
+}
+
+.logo-color-text {
+    color: var(--accent-color);
+    font-size: 33.6pt;
+}
+
+.contact-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
