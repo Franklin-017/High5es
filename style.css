@@ -26,6 +26,7 @@ body {
     font-family: 'Futura-regular';
     overflow-x: hidden;
     cursor: url('./assets/image/cursor_32.png'), auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -90,8 +91,8 @@ a {
 
 .title {
     font-weight: bold;
-    font-size: 140px;
-    line-height: 120px;
+    font-size: 100px;
+    line-height: 100px;
 }
 
 .subtitle {
@@ -107,14 +108,14 @@ a {
 }
 
 .logo-wrapper {
-    font-size: 19.2pt;
+    font-size: 24px;
     font-weight: 500;
     margin-left: calc(100vw - 95vw);
 }
 
 .logo-color-text {
     color: var(--accent-color);
-    font-size: 25.6pt;
+    font-size: 36px;
 }
 
 .nav-bar {
@@ -156,7 +157,7 @@ a {
     background-image: url("./assets/image/hero_section_img.png");
     background-repeat: no-repeat;
     background-size: auto 710px;
-    background-position-x: 100%;
+    background-position: 100% 100%;
 }
 
 .hero-section-left-content {
@@ -169,9 +170,9 @@ a {
 }
 
 .hero-section-main-text {
-    font-size: 148.4pt;
+    font-size: 150px;
     font-weight: bold;
-    line-height: 170px;
+    line-height: 140px;
 }
 
 .accent-color-text {
@@ -216,7 +217,6 @@ a {
     border-bottom: 20px solid var(--accent-color);
     margin-right: 20px;
     width: 50px;
-    margin-bottom: 25px;
 }
 
 .hence-proved-bottom-section {
@@ -347,7 +347,7 @@ a {
 .out-team-header-title {
     position: absolute;
     top: 40%;
-    right: -49%;
+    right: -35%;
     transform: translate(50%, -50%);
     background-color: #fff;
 }
@@ -557,6 +557,18 @@ a {
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .hence-proved-bottom-section {
+        font-size: 12px;
+        width: 370px;
+        line-height: 26px;
+    }
+
+    .hence-proved-img-wrapper {
+        width: 360px;
+    }
+}
+
 @media screen and (max-width: 1120px) {
     .hero-section-subtitle {
         font-size: 40px;
@@ -564,6 +576,7 @@ a {
 
     .hero-section-main-text {
         font-size: 120px;
+        line-height: 110px;
     }
 
     .title {
@@ -601,14 +614,14 @@ a {
         height: auto;
     }
     .hero-section {
-        background-size: auto 450px;
-        background-position-y: 100%;
+        background-size: auto 600px;
     }
 }
 
 @media screen and (max-width: 900px) {
     .title {
         font-size: 80px;
+        line-height: 75px;
     }
 
     .subtitle {
@@ -640,12 +653,17 @@ a {
 }
 
 @media screen and (max-width: 850px) {
+    
+    .hero-section {
+        background-size: auto 500px;
+    }
     .hero-section-subtitle {
         font-size: 30px;
     }
 
     .hero-section-main-text {
         font-size: 100px;
+        line-height: 100px;
     }
     
     .speak-us-more-content {
@@ -662,5 +680,340 @@ a {
         height: auto;
         width: 60%;
         margin: auto;
+    }
+
+    .speak-us-more-right-content {
+        height: 130px;
+    }
+}
+
+/* Tablet screen  */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        letter-spacing: 12px;
+        line-height: 40px;
+    }
+
+    .vertical-line-bold  {
+        border-bottom: 10px solid var(--accent-color);
+        width: 30px
+    }
+
+    .hence-proved-section,
+    .speak-us-more-section,
+    .our-team-section,
+    .feels-section,
+    .color-section {
+        padding: 70px;
+    }
+
+    .hence-proved-img-wrapper {
+        width: 300px;
+    }
+
+    .hence-proved-bottom-section {
+        font-size: 10px;
+        width: 310px;
+        line-height: 24px;
+    }
+
+    .content-wrapper {
+        width: 554px;
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .our-team-hero-section-wrapper {
+        width: 250px;
+        height: 350px;
+        transform: translateX(-15%);
+    }
+
+    .our-team-man-image {
+        width: 232px;
+    }
+
+    .out-team-header-title {
+        right: -25%;
+        line-height: 66px;
+    }
+
+    .our-team-rectangle-frame {
+        bottom: -13%;
+        width: 86px;
+        height: 100px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .our-team-header-number {
+        font-size: 60px;
+        right: -60%;
+    }
+
+    .out-team-header-subtitle {
+        right: -25%;
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero-section {
+        background-size: auto 435px;
+    }
+
+    .our-team-left-content .our-team-text-content {
+        line-height: 24px;
+    }
+
+    .our-team-text-content {
+        font-size: 10px;
+        line-height: 30px;
+    }
+
+    .open-quotes {
+        font-size: 45px;
+    }
+
+    .closing-quotes {
+        font-size: 330px;
+    }
+    
+    .speak-us-more-right-content {
+        height: 75px;
+    }
+
+    .speaker-role {
+        font-size: 12px;
+    }
+
+    .speaker-name {
+        letter-spacing: 17px;
+        font-size: 14px;
+    }
+
+    .speak-us-more-right-content {
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .footer-content {
+        width: 350px;
+        font-size: 10px;
+    }
+
+    .our-team-content-title {
+        font-size: 13px;
+        letter-spacing: 8px;
+    }
+
+    .footer-title {
+        font-size: 40px;
+    }
+
+    .email-input {
+        width: 350px;
+        height: 60px;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .sent-btn {
+        height: 60px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .copy-right-content {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    .hero-section {
+        background-size: auto 400px;
+    }
+
+    .black-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .orance-circle {
+        left: 168px;
+        width: 175px;
+        height: 175px;
+    }
+
+    .content-wrapper {
+        width: 435px;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+
+    .title {
+        font-size: 36px;
+        line-height: 33px;
+    }
+
+    .hero-section-main-text {
+        font-size: 75px;
+        line-height: 65px;
+    }
+
+    .hero-section-subtitle {
+        font-size: 24px;
+    }
+
+    .hero-section {
+        background-size: auto 375px;
+    }
+
+    .hence-proved-img-wrapper {
+        width: 200px;
+    }
+
+    .hence-proved-img {
+        height: 200px;
+    }
+
+    .vertical-line-bold  {
+        border-bottom: 5px solid var(--accent-color);
+        width: 15px;
+    }
+
+    .subtitle {
+        font-size: 9px;
+        letter-spacing: 7px;
+        line-height: 30px;
+    }
+
+    .nav-link {
+        font-size: 10px;
+    }
+
+    .contact-icons-wrapper {
+        width: 15%;
+    }
+    
+    .icon-small {
+        width: 15px;
+    }
+    
+    .facebook-icon-small {
+        width: 5px;
+    }
+    
+    .twitter-icon-small {
+        width: 12px;
+    }
+    
+    .vertical-line {
+        width: 35px;
+    }
+    
+    .explore-more-text {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .content-wrapper {
+        width: 330px;
+    } 
+
+    .footer-title {
+        font-size: 30px;
+    }
+
+    .email-input {
+        width: 250px;
+        height: 40px;
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .sent-btn {
+        height: 40px;
+        width: 60px;
+        font-size: 10px;
+    }
+
+    .speak-us-more-left-content {
+        height: 130px;
+    }
+
+    .black-circle {
+        width: 200px;
+        height: 200px;
+        border: 15px solid var(--primary-text-color);
+    }
+
+    .orance-circle {
+        left: 145px;
+        width: 150px;
+        height: 150px;
+        border: 15px solid var(--accent-color);
+    }
+
+    .our-team-hero-section-wrapper {
+        width: 160px;
+        height: 250px;
+    }
+
+    .out-team-header-title {
+        right: -30%;
+    }
+
+    .our-team-man-image {
+        width: 162px;
+    }
+
+    .out-team-header-subtitle {
+        right: -35%;
+        top: 127px;
+    }
+
+    .our-team-header-number {
+        font-size: 45px;
+        right: -65%;
+    }
+
+    .our-team-content-title {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .our-team-text-content {
+        font-size: 9px;
+        line-height: 16px;
+    }
+
+    .our-team-left-content .our-team-text-content {
+        line-height: 16px;
+    }  
+
+    .hence-proved-img-wrapper {
+        width: 165px;
+    }
+    
+    .hence-proved-img {
+        height: 160px;
+    }
+
+}
+
+/* Mobile screen */
+@media screen and (max-width: 425px) {
+    .hero-section {
+        background-size: auto 300px;
     }
 }
