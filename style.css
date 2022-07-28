@@ -563,7 +563,7 @@ a {
     }
 
     .hero-section-main-text {
-        font-size: 120pt;
+        font-size: 120px;
     }
 
     .title {
@@ -581,6 +581,15 @@ a {
     .out-team-header-subtitle {
         right: -40%;
     }
+
+    .our-team-hero-section-wrapper {
+        width: 300px;
+        height: 480px;
+    }
+
+    .our-team-man-image {
+        width: 325px;
+    }
 }
 
 @media screen and (max-width: 980px){
@@ -590,6 +599,10 @@ a {
 
     .speak-us-more-left-content {
         height: auto;
+    }
+    .hero-section {
+        background-size: auto 450px;
+        background-position-y: 100%;
     }
 }
 
@@ -650,6 +663,4 @@ a {
         width: 60%;
         margin: auto;
     }
-
-
 }
