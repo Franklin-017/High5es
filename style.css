@@ -88,7 +88,6 @@ a {
     text-align: right;
 }
 
-
 .title {
     font-weight: bold;
     font-size: 140px;
@@ -161,12 +160,11 @@ a {
 }
 
 .hero-section-left-content {
-    width: calc(100vw - 590px);
     margin-left: calc(100vw - 95%);
 }
 
 .hero-section-subtitle {
-    font-size: 57.6px;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -214,8 +212,7 @@ a {
     height: 400px;
 }
 
-
-.hence-proved-text-alignment .vertical-line-bold {
+.vertical-line-bold {
     border-bottom: 20px solid var(--accent-color);
     margin-right: 20px;
     width: 50px;
@@ -287,11 +284,15 @@ a {
 
 .feels-section-gallery {
     margin-top: 150px;
+    gap: 20px;
 }
 
 .white-bg {
     width: 350px;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
 }
 
@@ -333,7 +334,7 @@ a {
     border: 10px solid rgb(229, 233, 235);
     width: 325px;
     height: 522px;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
 }
 
 .our-team-man-image {
@@ -346,7 +347,7 @@ a {
 .out-team-header-title {
     position: absolute;
     top: 40%;
-    right: -45%;
+    right: -49%;
     transform: translate(50%, -50%);
     background-color: #fff;
 }
@@ -426,7 +427,7 @@ a {
 
 .speak-us-more-left-content {
     width: 400px;
-    height: auto;
+    height: 150px;
     position: relative;
 }
 
@@ -453,7 +454,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     position: absolute;
-    top: 0%;
+    top: 80%;
     right: -10%;
     line-height: 1;
 }
@@ -537,4 +538,118 @@ a {
 
 .copy-right-content {
     font-size: 14px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1240px) {
+    .white-bg {
+        width: 250px;
+        height: 400px;
+    }
+    .gallery-img {
+        width: 200px;
+        height: 350px;
+    }
+
+    .hence-proved-img {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .hero-section-subtitle {
+        font-size: 40px;
+    }
+
+    .hero-section-main-text {
+        font-size: 120pt;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .out-team-header-title {
+        right: -35%;
+    }
+
+    .hence-proved-img {
+        height: 300px;
+    } 
+
+    .out-team-header-subtitle {
+        right: -40%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .speak-us-more-right-content {
+        width: 300px;
+    }
+
+    .speak-us-more-left-content {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 80px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .hence-proved-section,
+    .speak-us-more-section,
+    .our-team-section,
+    .feels-section,
+    .color-section {
+        padding: 100px;
+    }
+
+    .out-team-header-title {
+        right: -29%;
+    }
+
+    .feels-section-gallery {
+        flex-direction: column;
+    }
+
+    .out-team-header-subtitle {
+        right: -26%;
+    }
+    .closing-quotes {
+        font-size: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero-section-subtitle {
+        font-size: 30px;
+    }
+
+    .hero-section-main-text {
+        font-size: 100px;
+    }
+    
+    .speak-us-more-content {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .speak-us-more-right-content {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    .speak-us-more-left-content {
+        height: auto;
+        width: 60%;
+        margin: auto;
+    }
+
+
 }
