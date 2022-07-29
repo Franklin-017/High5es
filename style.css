@@ -156,7 +156,7 @@ a {
     background-color: var(--hero-section-bg-color);
     background-image: url("./assets/image/hero_section_img.png");
     background-repeat: no-repeat;
-    background-size: auto 710px;
+    background-size: auto 680px;
     background-position: 100% 100%;
 }
 
@@ -542,6 +542,12 @@ a {
 
 /* Media Query */
 
+@media screen and (min-width: 1440px) {
+    .hero-section {
+        background-size: auto 900px;
+    }
+}
+
 @media screen and (max-width: 1240px) {
     .white-bg {
         width: 250px;
@@ -685,6 +691,20 @@ a {
     .speak-us-more-right-content {
         height: 130px;
     }
+
+    .hence-proved-section,
+    .speak-us-more-section,
+    .our-team-section,
+    .feels-section,
+    .color-section {
+        padding: 60px;
+        min-height: 50vh;
+        width: 100vw;
+    }
+
+    .our-team-hero-section {
+        min-height: 50vh;
+    }
 }
 
 /* Tablet screen  */
@@ -761,6 +781,27 @@ a {
         right: -25%;
         font-size: 16px;
         letter-spacing: 6px;
+    }
+
+    .white-bg {
+        width: 250px;
+        height: 350px;
+    }
+
+    .gallery-img {
+        width: 210px;
+        height: 310px;
+    }
+
+    .artist-name {
+        font-size: 12px;
+        letter-spacing: 8px;
+    }
+
+    .artist-native {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 6px;
     }
 }
 
@@ -865,6 +906,20 @@ a {
         line-height: 33px;
     }
 
+    .hence-proved-section,
+    .speak-us-more-section,
+    .our-team-section,
+    .feels-section,
+    .color-section {
+        padding: 45px;
+        min-height: 50vh;
+        width: 100vw;
+    }
+
+    .our-team-hero-section {
+        min-height: 50vh;
+    }
+
     .hero-section-main-text {
         font-size: 75px;
         line-height: 65px;
@@ -884,6 +939,10 @@ a {
 
     .hence-proved-img {
         height: 200px;
+    }
+
+    .hence-proved-bottom-section {
+        text-align: center;
     }
 
     .vertical-line-bold  {
@@ -935,16 +994,16 @@ a {
     }
 
     .email-input {
-        width: 250px;
-        height: 40px;
-        padding: 15px;
-        font-size: 10px;
+        width: 200px;
+        height: 30px;
+        padding: 10px;
+        font-size: 8px;
     }
 
     .sent-btn {
-        height: 40px;
-        width: 60px;
-        font-size: 10px;
+        height: 30px;
+        width: 40px;
+        font-size: 8px;
     }
 
     .speak-us-more-left-content {
@@ -1009,11 +1068,95 @@ a {
         height: 160px;
     }
 
+    .open-quotes {
+        font-size: 30px;
+    }
+
+    .closing-quotes {
+        font-size: 200px;
+    }
+    
+    .speak-us-more-right-content {
+        height: 75px;
+    }
+
+    .speaker-role {
+        font-size: 9px;
+    }
+
+    .speaker-name {
+        letter-spacing: 11px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .subtitle {
+        font-size: 9px;
+        letter-spacing: 4px;
+        line-height: 14px;
+    }
+
+    .explore-more-text {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .footer-content {
+        width: 200px;
+    }
+
+    .footer {
+        margin-top: 75px;
+    }
+
+    .white-bg {
+        width: 200px;
+        height: 300px;
+    }
+
+    .gallery-img {
+        width: 170px;
+        height: 265px;
+    }
+
+    .artist-name {
+        font-size: 10px;
+        letter-spacing: 5px;
+    }
+
+    .artist-native {
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin-top: 6px;
+    }
+
+    .feels-section-gallery {
+        margin-top: 100px;
+    }
 }
 
 /* Mobile screen */
 @media screen and (max-width: 425px) {
     .hero-section {
         background-size: auto 300px;
+    }
+
+    .hero-section-main-text {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .feels-section-gallery {
+        margin-top: 80px;
+    }
+
+    .white-bg {
+        width: 150px;
+        height: 250px;
+    }
+
+    .gallery-img {
+        width: 130px;
+        height: 230px;
     }
 }
