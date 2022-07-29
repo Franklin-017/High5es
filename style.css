@@ -543,9 +543,64 @@ a {
 /* Media Query */
 
 @media screen and (max-width: 2560px) {
+
+    .title {
+        font-size: 150px;
+        line-height: 135px;
+    }
+
+    .subtitle {
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+
     .hero-section {
         background-size: auto 900px;
     }
+
+    .vertical-line {
+        width: 110px;
+        border-top: 10px solid var(--accent-color);
+        margin-right: 30px;
+    }
+
+    .hero-section-subtitle {
+        font-size: 100px;
+    }
+
+    .hero-section-main-text {
+        font-size: 250px;
+        line-height: 220px;
+    }
+
+    .explore-more-text {
+        font-size: 40px;
+    }
+
+    .hence-proved-img-wrapper {
+        width: 500px;
+    }
+
+    .hence-proved-img {
+        height: 500px;
+    }
+
+    .hence-proved-bottom-section {
+        font-size: 24px;
+        width: 575px;
+        line-height: 35px;
+    }
+
+    .content-wrapper {
+        width: 900px;
+        font-size: 24px;
+        line-height: 45px;
+    }
+
+    .out-team-header-title {
+        right: -53%;
+    }
+    
 }
 
 @media screen and (max-width: 1240px) {
