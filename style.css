@@ -542,7 +542,7 @@ a {
 
 /* Media Query */
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 2560px) {
     .hero-section {
         background-size: auto 900px;
     }
