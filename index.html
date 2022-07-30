@@ -5,70 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <title>High5es</title>
   </head>
 
   <body>
+    <div id="cursor">
+      <div class="cursor__circle"></div>
+    </div>
     <div class="container">
       <header class="main-header flex justify-space-between align-center">
-        <div class="logo-wrapper text-uppercase">
-          HIGH<span class="logo-color-text">5</span>ES
-        </div>
+        <div class="logo-wrapper text-uppercase" cursor-class="arrow">HIGH<span class="logo-color-text">5</span>ES</div>
         <nav class="nav-bar flex justify-space-between align-center">
-          <a class="nav-link" href="#">HOME</a>
-          <a class="nav-link" href="#">ABOUT</a>
-          <a class="nav-link" href="#">WORK</a>
+          <a class="nav-link" cursor-class="arrow" href="#">HOME</a>
+          <a class="nav-link" cursor-class="arrow" href="#">ABOUT</a>
+          <a class="nav-link" cursor-class="arrow" href="#">WORK</a>
         </nav>
-        <div
-          class="contact-icons-wrapper flex justify-space-between align-center"
-        >
-          <div class="icon-wrapper">
-            <img
-              class="icon-small facebook-icon-small"
-              src="./assets/image/facebook_small_icon.png"
-              alt="facebook"
-            />
+        <div class="contact-icons-wrapper flex justify-space-between align-center">
+          <div class="icon-wrapper" cursor-class="circle-small">
+            <i class="lab la-facebook-f"></i>
           </div>
-          <div class="icon-wrapper">
-            <img
-              class="icon-small twitter-icon-small"
-              src="./assets/image/twitter_small_icon.png"
-              alt="facebook"
-            />
+          <div class="icon-wrapper" cursor-class="circle-small">
+            <i class="lab la-twitter"></i>
           </div>
-          <div class="icon-wrapper google-plus-icon-small">
-            <img
-              class="icon-small"
-              src="./assets/image/google_plus_small_icon.png"
-              alt="facebook"
-            />
+          <div class="icon-wrapper" cursor-class="circle-small">
+            <i class="lab la-google-plus"></i>
           </div>
         </div>
       </header>
-      <section class="hero-section flex justify-space-between align-center">
-        <div
-          class="hero-section-left-content flex align-start justify-center flex-column text-uppercase"
-        >
+      <section id="hero-section" class="hero-section flex justify-space-between align-center">
+        <div class="hero-section-left-content flex align-start justify-center flex-column text-uppercase">
           <div class="hero-section-subtitle">We are the ___</div>
           <div class="hero-section-main-text">
             <div>Phen<span class="accent-color-text">om</span></div>
             <div>enal</div>
           </div>
-          <div class="explore-more-wrapper flex align-center">
+          <div class="explore-more-wrapper flex align-center" cursor-class="arrow">
             <div class="vertical-line"></div>
             <div class="explore-more-text">Explore more</div>
           </div>
         </div>
       </section>
-      <section class="hence-proved-section flex justify-center align-center">
+      <section id="hence-proved-section" class="hence-proved-section flex justify-center align-center">
         <div class="hence-proved-content">
           <div class="hence-proved-top-section flex align-center">
             <div class="hence-proved-img-wrapper">
-              <img
-                class="hence-proved-img"
-                src="./assets/image/hence_proved_img.png"
-                alt="hence-proved-image"
-              />
+              <img class="hence-proved-img" src="./assets/image/hence_proved_img.png" alt="hence-proved-image" />
             </div>
             <div class="hence-proved-text-wrapper">
               <div class="hence-proved-title title text-uppercase">
@@ -83,35 +65,25 @@
             </div>
           </div>
           <div class="hence-proved-bottom-section text-right">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five but also the leap into electronic typesetting, remaining.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five but also the leap
+            into electronic typesetting, remaining.
           </div>
         </div>
       </section>
-      <section
-        class="color-section flex justify-center align-center flex-column"
-      >
+      <section class="color-section flex justify-center align-center flex-column">
         <div class="color-section-header">
           <div class="color-title title text-uppercase">Color</div>
           <div class="text-center subtitle">Our Power</div>
         </div>
         <div class="color-circle">
-          <div class="black-circle flex justify-center align-center">
-            #160929
-          </div>
-          <div class="orance-circle flex justify-center align-center">
-            #f26a3a
-          </div>
+          <div class="black-circle flex justify-center align-center">#160929</div>
+          <div class="orange-circle flex justify-center align-center">#f26a3a</div>
         </div>
         <div class="color-section-content">
           <div class="content-wrapper text-center">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </div>
         </div>
       </section>
@@ -121,7 +93,7 @@
             <div class="feels-section-title title text-uppercase">Feels</div>
             <div class="flex justify-space-between align-center">
               <div class="feels-section-subtitle subtitle">Our Job</div>
-              <div class="flex justify-center align-center">
+              <div class="margin-0 explore-more-wrapper flex justify-center align-center" cursor-class="circle-small">
                 <div class="vertical-line"></div>
                 <div class="explore-more-text">Explore more</div>
               </div>
@@ -129,49 +101,29 @@
           </div>
         </div>
         <div class="feels-section-gallery flex justify-center align-center">
-          <div
-            class="gallery-image-wrapper flex justify-center align-center flex-column"
-          >
-            <div class="white-bg">
-              <img
-                class="gallery-img"
-                src="./assets/image/feels_section_img2.png"
-                alt="feels-section-gallery"
-              />
+          <div class="gallery-image-wrapper flex justify-center align-center flex-column">
+            <div class="white-bg img-1-bg" cursor-class="arrow">
+              <img class="gallery-img" src="./assets/image/feels_section_img2.png" alt="feels-section-gallery" />
             </div>
-            <div
-              class="artist-details flex justify-center align-center flex-column"
-            >
+            <div class="artist-details flex justify-center align-center flex-column">
               <div class="artist-name text-uppercase">Kathikeyan</div>
               <div class="artist-native">Chennai 2017</div>
             </div>
           </div>
           <div class="gallery-image-wrapper">
-            <div class="white-bg">
-              <img
-                class="gallery-img"
-                src="./assets/image/feels_section_img2.png"
-                alt="feels-section-gallery"
-              />
+            <div class="white-bg img-2-bg" cursor-class="arrow">
+              <img class="gallery-img" src="./assets/image/feels_section_img2.png" alt="feels-section-gallery" />
             </div>
-            <div
-              class="artist-details flex justify-center align-center flex-column"
-            >
+            <div class="artist-details flex justify-center align-center flex-column">
               <div class="artist-name text-uppercase">Marquez</div>
               <div class="artist-native">Greez 2016</div>
             </div>
           </div>
           <div class="gallery-image-wrapper">
-            <div class="white-bg">
-              <img
-                class="gallery-img"
-                src="./assets/image/feels_section_img3.png"
-                alt="feels-section-gallery"
-              />
+            <div class="white-bg img-3-bg" cursor-class="arrow">
+              <img class="gallery-img" src="./assets/image/feels_section_img3.png" alt="feels-section-gallery" />
             </div>
-            <div
-              class="artist-details flex justify-center align-center flex-column"
-            >
+            <div class="artist-details flex justify-center align-center flex-column">
               <div class="artist-name text-uppercase">Harrison</div>
               <div class="artist-native">USA 2018</div>
             </div>
@@ -182,22 +134,16 @@
         <div class="our-team-hero-section">
           <div class="our-team-hero-section-wrapper">
             <div class="our-team-img-wrapper">
-              <img
-                class="our-team-man-image"
-                src="./assets/image/our_team_img.png"
-                alt="our-team-image"
-              />
+              <img class="our-team-man-image" src="./assets/image/our_team_img.png" alt="our-team-image" />
             </div>
-            <div class="out-team-header-title title text-uppercase">
+            <div class="our-team-header-title title text-uppercase">
               <div>Our</div>
               <div><span class="accent-color-text">Te</span>am</div>
             </div>
-            <div class="out-team-header-subtitle subtitle">
+            <div class="our-team-header-subtitle subtitle">
               <div>Members</div>
             </div>
-            <div
-              class="our-team-rectangle-frame flex justify-center align-start flex-column text-uppercase"
-            >
+            <div class="our-team-rectangle-frame flex justify-center align-start flex-column text-uppercase">
               <div>High</div>
               <div><span class="accent-color-text">5</span>es</div>
             </div>
@@ -208,20 +154,16 @@
         </div>
         <div class="our-team-content flex justify-center align-center">
           <div class="our-team-left-content">
-            <div class="our-team-content-title text-uppercase text-center">
-              meet our team
-            </div>
+            <div class="our-team-content-title text-uppercase text-center">meet our team</div>
             <div class="our-team-text-content text-right">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since.when an unknown printer took a galley
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.when
+              an unknown printer took a galley
             </div>
           </div>
           <div class="our-team-right-content">
             <div class="our-team-text-content text-left">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry. .'s standard dummy
-              text ever since the 1500s
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. .'s standard dummy text ever since
+              the 1500s
             </div>
           </div>
         </div>
@@ -232,47 +174,39 @@
           <div class="text-center subtitle">us more</div>
         </div>
         <div class="speak-us-more-content flex justify-center align-center">
-          <div
-            class="speak-us-more-left-content flex justify-end flex-column text-right"
-          >
+          <div class="speak-us-more-left-content flex justify-end flex-column text-right">
             <div class="open-quotes">“</div>
             <div class="speaker-role">Product Designer</div>
             <div class="speaker-name text-uppercase">Marquez</div>
             <div class="closing-quotes">”</div>
           </div>
           <div class="speak-us-more-right-content text-left">
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry
           </div>
         </div>
       </section>
       <footer class="footer">
         <div class="footer-title text-uppercase">Call us</div>
         <div class="footer-content text-center">
-          We’re designers who code. We take on projects of all sizes, from web
-          design and build, to product, branding and system design.
+          We’re designers who code. We take on projects of all sizes, from web design and build, to product, branding and system design.
         </div>
         <div class="email-input-wrapper">
-          <input class="email-input" type="email" placeholder="YOUR E-MAIL" />
-          <button class="sent-btn">Send</button>
+          <input class="email-input" type="email" placeholder="YOUR E-MAIL"  />
+          <button class="sent-btn" cursor-class="circle-small">Send</button>
         </div>
-        <div
-          class="social-media-icons-wrapper flex justify-center align-center"
-        >
-          <div class="fb-icon-wrapper footer-icon-wrapper">
-            <img src="./assets/image/facebook.png" alt="facebook-image" />
+        <div class="social-media-icons-wrapper flex justify-center align-center">
+          <div class="footer-icon-wrapper" cursor-class="circle-small">
+            <i class="lab la-facebook-f"></i>
           </div>
-          <div class="twitter-icon-wrapper footer-icon-wrapper">
-            <img src="./assets/image/twitter.png" alt="twitter_image" />
+          <div class="footer-icon-wrapper" cursor-class="circle-small">
+            <i class="lab la-twitter"></i>
           </div>
-          <div class="pinterest-icon-wrapper footer-icon-wrapper">
-            <img src="./assets/image/pinintrest.png" alt="pintrest_image" />
+          <div class="footer-icon-wrapper" cursor-class="circle-small">
+            <i class="lab la-pinterest"></i>
           </div>
-          <div class="insta-icon-wrapper footer-icon-wrapper">
-            <img src="./assets/image/insta.png" alt="instagrap" />
+          <div class="footer-icon-wrapper" cursor-class="circle-small">
+            <i class="lab la-instagram"></i>
           </div>
         </div>
         <div class="copy-right-content">
@@ -280,6 +214,7 @@
         </div>
       </footer>
     </div>
-    <script src="./index.html" type="module" defer></script>
+    <script src="./app.js" type="application/javascript"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>
