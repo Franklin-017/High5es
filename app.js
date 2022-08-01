@@ -61,3 +61,66 @@ cursorModifiers.forEach((curosrModifier) => {
     cursor.classList.remove(className);
   });
 });
+
+const opacityZero = "opacity-0";
+const transformRight150 = "transform-right-150";
+const transformLeft100 = "transform-left-100";
+const transformRight100 = "transform-right-100";
+const scaleSmall = "scale-small";
+
+window.addEventListener("scroll", () => {
+  removeClassNames(
+    ["hence-proved-img-wrapper", "gallery-image-wrapper", "our-team-hero-section-wrapper", "email-input-wrapper", "social-media-icons-wrapper"],
+    [opacityZero, scaleSmall]
+  );
+  removeClassNames(
+    ["hence-proved-title", "color-title", "color-subtitle", "content-wrapper", "speak-title", "speak-subtitle", "footer-title", "footer-content"],
+    [opacityZero, transformRight150]
+  );
+  removeClassNames(
+    [
+      "hence-proved-bottom-section",
+      "hero-section-main-text",
+      "hero-section-subtitle",
+      "explore-more-wrapper",
+      "black-circle",
+      "feels-explore-more-sec",
+      "our-team-left-content",
+      "speak-us-more-left-content"
+    ],
+    [opacityZero, transformLeft100]
+  );
+  removeClassNames(
+    ["orange-circle", "feels-section-title", "feels-section-subtitle", "our-team-right-content", "speak-us-more-right-content", "copy-right-content"],
+    [opacityZero, transformRight100]
+  );
+  removeClassNames(["our-team-header-title"], [opacityZero]);
+});
+
+const canAnimateElement = (target) => {
+  const { scrollTop, clientHeight } = document.documentElement;
+  let nodeElement = document.getElementsByClassName(target);
+  let nodeElementPosition = nodeElement[0].getBoundingClientRect().top;
+  if (scrollTop > (scrollTop + nodeElementPosition).toFixed() - clientHeight * 0.85) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const removeClassNames = (target, classNames, isHeroSection = false) => {
+  target.forEach((ele) => {
+    let node = document.getElementsByClassName(ele);
+    if (isHeroSection || canAnimateElement(ele)) {
+      classNames.forEach((cssClass) => {
+        for (let i = 0; i < node.length; i++) node[i].classList.remove(cssClass);
+      });
+    }
+  });
+};
+
+setTimeout(setHeroSectionAnimation, 200);
+
+function setHeroSectionAnimation() {
+  removeClassNames(["hero-section-main-text", "hero-section-subtitle", "explore-more-wrapper"], [opacityZero, transformLeft100], true);
+}
